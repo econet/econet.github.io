@@ -1,0 +1,24 @@
+html, body, main, #map {
+  height: 100%
+}
+
+header {
+  padding: 1rem
+}
+
+footer {
+  padding: 0 1rem
+}
+
+body {
+  font: 18px sans;
+  margin: 0;
+  display: flex;
+  flex-direction: column
+}
+
+a {
+  text-decoration: none;
+  color: #007fff
+}
+

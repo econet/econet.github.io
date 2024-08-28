@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="color-scheme" content="light dark">
+		<link rel="stylesheet" href="style.css">
+		 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+		<!-- link rel="icon" type="image/svg" href="monad.svg" -->
+		<title>EcoNet</title>
+	</head>
+	<body>
+		<header>
+			<a href="index.html">Home</a> &middot;
+			<a href="">Friends</a>
+		</header>
+		<main>
+			<div id="map"></div>
+		</main>
+		<footer>
+			<p>Made by Day Rain from B-PLAN</p>
+		</footer>
+		 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+		<script>
+			const map = L.map('map').setView([42.87, 74.59], 15);
+			const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+			const circle0 = L.circle([42.878, 74.592], {
+			    color: '#ff0000',
+			    fillColor: '#ff0000',
+			    fillOpacity: 0.5,
+			    radius: 180
+			}).addTo(map);
+			circle0.bindPopup("<p>Пластик: 1кг - 50сом<br>Стекло: 1кг - 20сом</p>")
+			const circle1 = L.circle([42.87, 74.58], {
+			    color: '#ff0000',
+			    fillColor: '#ff0000',
+			    fillOpacity: 0.5,
+			    radius: 180
+			}).addTo(map);
+			const circle2 = L.circle([42.865, 74.6], {
+			    color: '#ff0000',
+			    fillColor: '#ff0000',
+			    fillOpacity: 0.5,
+			    radius: 180
+			}).addTo(map);
+			circle0.bindPopup("<p>Пластик: 1кг - 50сом<br>Стекло: 1кг - 20сом</p>")
+			circle1.bindPopup("<p>Пластик: 1кг - 40сом<br>Стекло: 1кг - 25сом</p>")
+			circle2.bindPopup("<p>Картон: 1кг - 80сом<br>Резина: 1кг - 100сом</p>")
+		</script>
+	</body>
+</html>
