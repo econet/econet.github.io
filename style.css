@@ -30,12 +30,11 @@ a {
   margin: auto
 }
 
-.accent {
-  color: #00ff7f
-}
-
 .content {
   max-width: 40rem;
   margin: auto;
+}
+
+main {
   padding: 0 1rem
 }
