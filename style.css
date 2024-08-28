@@ -3,11 +3,12 @@ html, body, main, #map {
 }
 
 header {
-  padding: 1rem
+  padding: 1rem;
+  display: flex
 }
 
 footer {
-  padding: 0 1rem
+  padding: 1rem
 }
 
 body {
@@ -22,3 +23,6 @@ a {
   color: #007fff
 }
 
+.m-auto {
+  margin: auto
+}
